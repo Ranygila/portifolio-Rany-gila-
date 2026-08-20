@@ -2,14 +2,15 @@ let caminhoCurriculo = "./VITOR_MOUTIM_PT-BR.pdf"
 
 let botaoBaixarCurriculo = document.querySelector("#botao-curriculo")
 console.log(botaoBaixarCurriculo)
+let botaoZap = document.querySelector("#botao-zap")
 
-botaoBaixarCurriculo.addEventListener("click", function() {
-    console.log("Botão clicado!")
+botaoBaixarCurriculo.addEventListener("click", function(){
+  console.log("Clicou! Não grita.")
+  
+  let tagA = document.createElement("a")
+  console.log(tagA)
 
-let tagA = document.createElement("a")
-CONSOLE.log(tagA)
-tagA.href = caminhoCurriculo
-tagA.download = "VITOR_MOUTIM_PT-BR.pdf"
-tagA.click()
-
+  tagA.href = caminhoCurriculo
+  tagA.download = "Curriculo.pdf"
+  tagA.click()
 })
